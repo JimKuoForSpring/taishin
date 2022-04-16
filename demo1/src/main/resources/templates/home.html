@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>My first template</title>
 </head>
+
 <body>
     <h1>my first template</h1>
+    <h3 th:text="${message}"></h3>
     <img th:src="@{/images/richart.png}" />
     <h2>my second image no template</h2>
-    <img src="/images/richart.png" />
+    <img src="/images/richart.png"/>
 </body>
+
 </html>
