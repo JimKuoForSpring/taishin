@@ -1,5 +1,6 @@
 package com.uuu.demo1;
 
+import com.uuu.demo1.controllers.RootController;
 import com.uuu.demo1.services.GreetingService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

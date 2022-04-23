@@ -1,4 +1,4 @@
-package com.uuu.demo1;
+package com.uuu.demo1.controllers;
 
 import com.uuu.demo1.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
