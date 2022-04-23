@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Add course course form</h1>
+<form method="post" th:object="${courseForm}">
+    <table>
+        <tr>
+            <td>Course ID:</td>
+            <td><input type="text" th:field="*{courseId}"/></td>
+            <td th:if="${#fields.hasErrors('courseId')}" th:errors="*{courseId}">course Id Error</td>
+        </tr>
+        <tr>
+            <td>Course Name:</td>
+            <td><input type="text" th:field="*{courseName}"/></td>
+            <td th:if="${#fields.hasErrors('courseName')}" th:errors="*{courseName}" >Course Name Error</td>
+        </tr>
+        <tr>
+            <td>duration</td>
+            <td><input type="number" th:field="*{duration}"/></td>
+            <td th:if="${#fields.hasErrors('duration')}" th:errors="*{duration}">Course Duration Error</td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
