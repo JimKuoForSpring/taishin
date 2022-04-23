@@ -4,7 +4,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class test1 {
+public class Test1 {
     @BeforeEach
     public void prepareData() {
         System.out.println("prepare some data..");
@@ -15,10 +15,11 @@ public class test1 {
     }
     @Test
     public void doTestA() {
-        System.out.print("do testA");
+        System.out.println("do testA");
     }
+
     @Test
     public void doTestB() {
-        System.out.print("do testB");
+        System.out.println("do testB");
     }
 }
