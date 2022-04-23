@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'com.uuu'
-version = '0.0.1-SNAPSHOT'
+version = '1'
 sourceCompatibility = '11'
 
 repositories {
@@ -22,6 +22,11 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+bootJar {
+//	archiveName = "myboot.jar"
+//	baseName = "myBoot"
 }
 
 tasks.named('test') {
