@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'com.uuu'
-version = '1'
+version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 repositories {
@@ -19,14 +19,11 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'net.bull.javamelody:javamelody-spring-boot-starter:1.91.0'
+	implementation 'com.lowagie:itext:2.1.7'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-}
-
-bootJar {
-//	archiveName = "myboot.jar"
-//	baseName = "myBoot"
 }
 
 tasks.named('test') {
